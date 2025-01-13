@@ -6,7 +6,7 @@ class Server:
     def __init__(self):
         self.connections = []
         self.server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        self.server_socket.bind(('10.103.161.69', 9999))
+        self.server_socket.bind(('localhost', 9999))
         self.server_socket.listen(1)
         print("Server is running and listening for connections...")
 

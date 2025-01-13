@@ -5,7 +5,7 @@ import threading
 class Client:
     def __init__(self):
         self.client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        self.client_socket.connect(('10.103.161.69', 9999))
+        self.client_socket.connect(('localhost', 9999))
         self.done = False
 
     def run(self):
